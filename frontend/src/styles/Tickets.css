@@ -1,0 +1,375 @@
+
+
+
+
+/* Tickets Page Styles */
+.tickets-page {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.page-header {
+  
+  align-items: center;
+  gap: -10rem;
+  margin-bottom: 2rem;
+}
+
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Ticket Table */
+.tickets-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticket-headings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticket-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ticket-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ticket-item:last-child {
+  border-bottom: none;
+}
+
+/* Status Badges */
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.status-new {
+  background: #10b981;
+  color: white;
+}
+
+.status-open {
+  background: #f59e0b;
+  color: white;
+}
+
+.status-closed {
+  background: #6b7280;
+  color: white;
+}
+
+/* Ticket Detail Page */
+.ticket-page {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.ticket-header {
+  margin-bottom: 2rem;
+}
+
+.ticket-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticket-header h3 {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-desc {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.ticket-desc h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.ticket-desc p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: #ef4444;
+  border-color: #dc2626;
+}
+.btn-view{
+    
+    background-color:#dc2626;
+}
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Styles */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.ReactModal__Content {
+    margin-top: -30rem !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  color: white !important;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Note Items */
+.note-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.note-date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.note-text {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner-border {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ticket-headings,
+  .ticket-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .ticket-headings {
+    display: none;
+  }
+  
+  .ticket-item {
+    display: block;
+    padding: 1rem;
+  }
+  
+  .ticket-item > div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .ReactModal__Content {
+    width: 90% !important;
+    max-width: 400px !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Hover Effects */
+.interactive-hover {
+  transition: all 0.3s ease;
+}
+
+.interactive-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.d-flex { display: flex; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
