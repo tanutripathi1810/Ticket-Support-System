@@ -1,38 +1,77 @@
-# support desk system
+# 🎫 Support Hub – Ticketing System
 
-This is a mern stack support ticketing system
+Support Hub is a full-stack support ticketing system built with a modern MERN (MongoDB, Express, React, Node.js) stack. It allows users to register, log in, and create support tickets, while admin users can manage and respond to them in real time.
 
-### Tech stack
+---
 
-- MongoDB
-- ReactJS
-- NodeJS-Express
-- Redux-Toolkit
-- React-Router
+## 📸 Preview
 
-### How do I get set up?
+![Support Hub Screenshot](./supporthub.png) <!-- Replace with actual image path or upload -->
 
+---
+
+## 🚀 Features
+
+- 🔐 User Authentication (Register / Login)
+- 🧾 Ticket Submission & Management
+- 🧑‍💻 Admin Dashboard for Ticket Oversight
+- ✅ Status Tracking (New, Open, Closed)
+- 💬 Comment/Reply System on Tickets
+- 📦 Fully functional RESTful API
+- 💡 Clean and responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**  
+- React.js + Vite  
+- React Router  
+- Axios  
+- Tailwind CSS (optional)  
+
+**Backend**  
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- JSON Web Tokens (JWT)  
+- bcrypt for password hashing  
+
+---
+
+## 🔧 Getting Started
+
+### 📁 Clone the repository
+
+```bash
+git clone https://github.com/tanutripathi1810/Support-Hub.git
+cd Support-Hub
 ```
-git clone <url>
+## 🛠️ Backend Setup
 
-npm install
-```
+Set up your environment variables in a `.env` file:
 
-### Contribution guidelines
-
-- add `.env` file in root and add the following
-
-```
-NODE_ENV=development || production
-
+```env
 PORT=5000
-
-MONGO_URI=your mongo uri
-
-JWT_SECRET=your jwt secret
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 ```
+### 💻 Frontend Setup
+```bash
 
-### Who do I talk to?
+cd frontend
+npm install
+npm run dev
+```
+### 📌 Future Improvements
+- ✅ Email notifications
 
-- Repo owner [https://www.raisanjmr.in](https://www.raisanjmr.in)
-- view live [https://support-desk-0azr.onrender.com](https://support-desk-0azr.onrender.com)
+- 📈 Ticket analytics dashboard
+
+- 🧑‍🤝‍🧑 Team-based support roles
+
+- 🗃️ Ticket category filters and search
+
+### 👤 Author
+Tanu Tripathi
+🔗 GitHub[!https://github.com/tanutripathi1810]
