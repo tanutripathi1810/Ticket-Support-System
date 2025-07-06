@@ -6,13 +6,14 @@ console.log('MONGODB_URI:', process.env.MONGODB_URI) // Add this line to debug
 const { errorHandler } = require('./middleware/errorMiddleware')
 const colors = require('colors')
 const connectDB = require('./config/db')
+const cors = require('cors'); 
 const PORT = process.env.PORT || 5000
 
 // Connect to DB
 connectDB()
 
 const app = express()
-
+app.use(cors()); 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
